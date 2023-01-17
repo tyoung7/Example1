@@ -15,7 +15,7 @@ Basal <- data[data$sample_id %in% first10,header2=='Basal-like']
 
 LumA_groups <- split(colnames(LumA), sample(1:nfold, ncol(LumA), replace=T))
 Basal_groups <- split(colnames(Basal), sample(1:nfold, ncol(Basal), replace=T))
-  
+
 result <- array()
   
 for (test_group in 1:nfold) {
